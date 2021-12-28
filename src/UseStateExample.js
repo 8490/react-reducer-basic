@@ -29,7 +29,7 @@ const UseStateExample = () => {
       <button
         onClick={fetchDog}
         disabled={loading}
-        style={{ width: "200px", margin: "1rem" }}
+        style={{ width: "200px", margin: "1rem", background: "yellow" }}
       >
         Fetch Dog
       </button>
