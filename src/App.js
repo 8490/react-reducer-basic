@@ -4,8 +4,8 @@ function App() {
   return (
     <div>
       <h1>USE REDUCER APP</h1>
-
       <UseStateExample />
+      <hr style={{ margin: "1rem" }} />
     </div>
   );
 }

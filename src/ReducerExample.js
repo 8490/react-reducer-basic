@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useReducer } from "react";
+import { initialState, reducer } from "./reducer";
 
-const UseStateExample = () => {
-  const [dog, setDog] = useState("");
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+const ReducerExample = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const { loading, dog, error } = state;
 
   const fetchDog = () => {
     setLoading(true);
@@ -39,4 +39,4 @@ const UseStateExample = () => {
   );
 };
 
-export default UseStateExample;
+export default ReducerExample;
